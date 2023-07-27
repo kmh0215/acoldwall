@@ -1,0 +1,853 @@
+@media screen and (max-width: 767px) {
+    a{text-decoration: none; color: black;}
+
+    .raleway{font-family: 'Raleway', sans-serif;}
+    .lato{font-family: 'Lato', sans-serif;}
+    
+    .bgTitle{
+        width: 100%; max-width: 767px; height: 300px; position: relative;
+    }
+    .bgTitle h2{
+        position: absolute;
+    }
+    
+    .btn{
+        box-sizing: border-box;
+    }
+    .outlined{
+        border: 1px solid #c70200; color: #c70200;
+    }
+    .red{
+        background-color: #c70200; color: #ffffff; border-style: none;
+    }
+    .black{
+        background-color: #000000; color: #ffffff; border-style: none;
+    }
+    
+    #bookMark{
+        position: absolute; right: -7px; top: 5%; color: transparent; height: 16px; width: 16px;
+        border-style: none; background-color: #ffffff; cursor: pointer; 
+        background: url('../images/outline_bookmark_border_black_24dp.png') center / 16px no-repeat;
+    }
+    #bookMark.active{
+        background: url('../images/bookmark_FILL.png') center/ 16px no-repeat;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type='checkbox']{
+        display: none;
+    }
+    
+    [id$='Panel']{
+        display: none;
+    }
+    [id$='Panel'].active{
+        display: block;
+    }
+    
+    [id$='Complete']{
+        position: absolute; top: 50%; z-index: 10;
+        transform: translate(0%, -50%); background-color: white;
+        font-family: 'Raleway', sans-serif; border-right: 2px solid black;
+        border-bottom: 2px solid black; display: none;
+    }
+    [id$='Complete'].active{
+        display: block;
+    }
+    [id$='Complete'] span{
+        border-bottom: 1px solid black; width: 90%; display: block;
+        margin: 0 auto; margin-bottom: 35px;
+    }
+    [id$='Complete'] span strong{
+        font-size: 20px; font-weight: 400; line-height: 50px;
+    }
+    [id$='Complete'] p{
+        display: block; width: 100%; text-align: center;
+        font-weight: 300; font-size: 16px;
+    }
+    [id$='Complete'] input[type='submit']{
+        width: 70px; height: 25px; font-weight: 300; font-size: 16px;
+        line-height: 25px; margin-left: 50%; margin-bottom: 30px;
+    }
+    
+    [class$='Component']:not([class$='quantComponent']){
+        display: block; font-family: 'Lato', sans-serif;
+        font-size: 14px; font-weight: 300; color: #000000;
+        width: 100%; position: relative;
+        margin-bottom: 70px; border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+    [class$='Component']:not([class$='quantComponent']) label{
+        position: absolute; top: 0; left: 7%; transition-duration: 0.5s;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']){
+        border-style: none; height: 40px;
+        width: 100%; padding-left: 7%;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']):focus + label{
+        top: -10%; left: 0; font-size: 12px;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:focus{
+        outline: none;
+    }
+    [class$='Component']:not([class$='quantComponent']) > input[type='button']{
+        position: absolute; right: 0; bottom: 0; width: 25%;
+        max-width: 100px; height: 40px;
+    }
+    
+    .quantComponent{
+        width: 30%; max-width: 140px; margin-left: 0.78%;
+        height: 20px; float: left;
+    }
+    .quantComponent > label{
+        font-size: 14px; font-weight: 400;
+    }
+    .quantComponent > input{
+        width: 20px; height: 20px; box-sizing: border-box; font-size: 12px;
+        font-weight: 400; margin-left: 4%; background-color: transparent;
+        border: 1px solid black;
+    }
+    .quantComponent > input[type='number']{
+        text-align: center;
+    }
+    
+    [id='emptyCart']{
+        display: none;
+    }
+    /* bxslider Reset */
+    .bx-wrapper{
+        box-shadow: none;
+        border: none;
+        background: #fff;
+    }
+    
+    .titleBg{
+        width: 100%; max-width: 767px;
+        position: relative;
+    }
+
+    header{
+    position: fixed; left: 0; top: 0;
+    background-color: white; width: 100%; z-index: 1; max-width: 767px;
+    }
+    header > div{
+        max-width: 767px; margin: 0 auto; position: relative; line-height: 28px; 
+        padding: 18px 2.6%; box-sizing: border-box;
+    }
+    header div > h1{
+        position: absolute; top: 5px;
+    }
+    header div h1{
+        left:  2.6%; width: 10%; max-width: 66px;
+    }
+    header div h1 a{
+        display: block; text-indent: -9999px;
+        background: url('../images/mainLogo.png') center / contain no-repeat;
+    }
+    header div nav{
+        position: fixed; right: 0; top: 35px;
+        box-sizing: border-box; display: none;
+        width: 100%; height: 100%; overflow: scroll;
+        background-color: white;
+    }
+    header div nav.active{
+        display: block;
+    }
+    header div nav ul{
+        padding-left: 5%;
+    }
+    header div nav ul li{
+        font-size: 12px; display: block;
+    }
+    header div nav ul > li > ol{
+        display: none;
+    }
+    header div nav ul > li.active > ol{
+        display: block;
+    }
+    header div nav  ul > li ol{
+        list-style: none; margin-top: 10px; 
+    }
+    header div nav  ul > li ol li{
+        line-height: 10px; margin-bottom: 18px;
+    }
+    header div nav  ul > li ol li a{
+        color: #949494; font-size: 10px;
+    }
+    header div nav  ul > li ol li a:hover{
+        color: #000000; text-decoration: underline;
+    }
+    header div > div:first-of-type{
+        position: fixed; top: 1.5%; right: 3%; width: 105px; display: block;
+    }
+    header div > div *:not(:first-child){
+        margin-left: 15px;
+    }
+    header div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header div > div:first-of-type *{
+        width: 15px; text-indent: -9999px; float: left; display: blcok;
+        line-height: 28px; border-style: none; padding: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    header div > div:first-of-type input[type='button']:first-of-type{
+        background-image: url('../images/search.png');
+        border-style: none; background-color: transparent;
+        padding: 0; width: 15px;
+    }
+    header div > div:first-of-type a:first-of-type{
+        background-image: url('../images/signIn.png');
+    }
+    header div > div:first-of-type a:nth-of-type(2){
+        background-image: url('../images/cart.png');
+    }
+    header div > div:first-of-type .navBtn{
+        background-image: url('../images/menuBtn.png');
+        background-color: transparent;
+    }
+
+    header div #searchPanel{
+        width: 100%; position: absolute; left: 0; top: 5px; background-color: white;
+    }
+    
+    header div #searchPanel::after{
+        content: ''; display: block; clear: both;
+    }
+    header div #searchPanel label{
+        display: none;
+    }
+    header div #searchPanel input[type='search']{
+        width: 85%; max-width: 1650px; border-style: none;
+        font-size: 14px; color: #949494; line-height: 28px;
+        margin-left: 3.29%; float: left;
+    }
+    header div #searchPanel input[type='button']{
+        background: url('../images/close.png') center / contain no-repeat;
+        width: 2%; max-width: 25px; display: block; border-style: none;
+        background-color: transparent; text-indent: -9999px; cursor: pointer;
+        line-height: 28px;
+    }
+    
+    body > aside{
+        position: fixed; right: 5%; bottom: 5%;
+    }
+    body > aside a{
+        width: 20px; height: 20px; font-size: 0; display: block;
+        border-radius: 10px;
+    }
+    body > aside a:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    body > aside a:first-of-type{background: url('../images/facebookBtn.png') left top / cover no-repeat;}
+    body > aside a:nth-of-type(2){background: url('../images/instagramBtn.png') left top / cover no-repeat;}
+    body > aside a:last-of-type{background: url('../images/topBtn.png') left top / cover no-repeat;}
+
+    footer{
+        width: 100%; max-width: 767px; padding: 5px 0;
+    }
+    footer p{
+        padding-left: 5%;
+    }
+    footer ul{
+        padding-left: 5%; margin-bottom: 20px; width: 95%;
+    }
+    footer ul::after{
+        content: ''; display: block; clear: both;
+    }
+    footer ul li{
+        display: block; font-weight: 700; float: left; width: 45%;
+    }
+    footer ul li:hover a{
+        color: black; text-decoration: underline;
+    }
+    footer ul li:nth-child(2n){
+        margin-left: 5%;
+    }
+    footer ul li a{
+        color: #808080; font-size: 10px; line-height: 18px;
+    }
+    footer p{
+        font-family: 'Lato', sans-serif; font-size: 10px;
+        color: #808080; line-height: 18px;
+        width: 70%; max-width: 536px;
+    }
+}
+/* ?moblie */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    a{text-decoration: none; color: black;}
+
+    .raleway{font-family: 'Raleway', sans-serif;}
+    .lato{font-family: 'Lato', sans-serif;}
+    
+    .bgTitle{
+        width: 100%; max-width: 1279px; height: 768px; position: relative;
+    }
+    .bgTitle h2{
+        position: absolute;
+    }
+    
+    .btn{
+        box-sizing: border-box;
+    }
+    .outlined{
+        border: 1px solid #c70200; color: #c70200;
+    }
+    .red{
+        background-color: #c70200; color: #ffffff; border-style: none;
+    }
+    .black{
+        background-color: #000000; color: #ffffff; border-style: none;
+    }
+    
+    #bookMark{
+        position: absolute; right: -7px; top: 5%; color: transparent; height: 24px; width: 24px;
+        border-style: none; background-color: #ffffff; cursor: pointer; 
+        background: url('../images/outline_bookmark_border_black_24dp.png') center / 24px no-repeat;
+    }
+    #bookMark.active{
+        background: url('../images/bookmark_FILL.png') center/ 24px no-repeat;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type='checkbox']{
+        display: none;
+    }
+    
+    [id$='Panel']{
+        display: none;
+    }
+    [id$='Panel'].active{
+        display: block;
+    }
+    
+    [id$='Complete']{
+        position: absolute; top: 50%; z-index: 10;
+        transform: translate(0%, -50%); background-color: white;
+        font-family: 'Raleway', sans-serif; border-right: 2px solid black;
+        border-bottom: 2px solid black; display: none;
+    }
+    [id$='Complete'].active{
+        display: block;
+    }
+    [id$='Complete'] span{
+        border-bottom: 1px solid black; width: 90%; display: block;
+        margin: 0 auto; margin-bottom: 35px;
+    }
+    [id$='Complete'] span strong{
+        font-size: 20px; font-weight: 400; line-height: 50px;
+    }
+    [id$='Complete'] p{
+        display: block; width: 100%; text-align: center;
+        font-weight: 300; font-size: 16px;
+    }
+    [id$='Complete'] input[type='submit']{
+        width: 70px; height: 25px; font-weight: 300; font-size: 16px;
+        line-height: 25px; margin-left: 80%; margin-bottom: 30px;
+    }
+    
+    [class$='Component']:not([class$='quantComponent']){
+        display: block; font-family: 'Lato', sans-serif;
+        font-size: 14px; font-weight: 300; color: #000000;
+        width: 100%; position: relative;
+        margin-bottom: 70px; border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+    [class$='Component']:not([class$='quantComponent']) label{
+        position: absolute; top: 0; left: 7%; transition-duration: 0.5s;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']){
+        border-style: none; height: 40px;
+        width: 100%; padding-left: 7%;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']):focus + label{
+        top: -10%; left: 0; font-size: 12px;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:focus{
+        outline: none;
+    }
+    [class$='Component']:not([class$='quantComponent']) > input[type='button']{
+        position: absolute; right: 0; bottom: 0; width: 25%;
+        max-width: 100px; height: 40px;
+    }
+    
+    .quantComponent{
+        width: 30%; max-width: 140px; margin-left: 0.78%;
+        height: 25px; float: left;
+    }
+    .quantComponent > label{
+        font-size: 14px; font-weight: 400;
+    }
+    .quantComponent > input{
+        width: 25px; height: 25px; box-sizing: border-box; font-size: 14px;
+        font-weight: 400; margin-left: 4%; background-color: transparent;
+        border: 1px solid black;
+    }
+    .quantComponent > input[type='number']{
+        appearance: none; -webkit-appearance: none;
+        text-align: center;
+    }
+    
+    [id='emptyCart']{
+        display: none;
+    }
+    /* bxslider Reset */
+    .bx-wrapper{
+        box-shadow: none;
+        border: none;
+        background: #fff;
+    }
+    
+    .titleBg{
+        width: 100%; max-width: 1920px; margin-bottom: 150px;
+        position: relative;
+    }
+
+    header{
+    position: fixed; left: 0; top: 0;
+    background-color: white; width: 100%; z-index: 1; max-width: 1279px;
+    }
+    header > div{
+        max-width: 1279px; margin: 0 auto; position: relative; line-height: 28px; 
+        padding: 18px 2.6%; box-sizing: border-box;
+    }
+    header div > h1,
+    header div > div:not(#searchPanel){
+        position: absolute; top: 18px;
+    }
+    header div h1{
+        left:  2.6%; width: 5%; max-width: 66px;
+    }
+    header div h1 a{
+        display: block; text-indent: -9999px;
+        background: url('../images/mainLogo.png') center / contain no-repeat;
+    }
+
+    header div nav{
+        background-color: white; padding: 0 7.5%; box-sizing: border-box;
+    }
+    header div nav .mui{
+        display: none;
+    }
+    header div nav input[type="checkbox"]{
+        display: none;
+    }
+    header div nav > ul{
+        display: flex; flex-flow: row nowrap; justify-content: space-between; width: 95%;
+    }
+    header div nav > ul > li a,
+    header div nav > ul > li span{
+        font-size: 12px; display: block; text-align: center;
+    }
+    header div nav ol{
+        display: none; list-style: none; margin-top: 40px;
+    }
+    header div nav:hover ol{
+        display: block;
+    }
+    header div nav ol li{
+        line-height: 14px; margin-bottom: 28px;
+    }
+    header div nav ol li a{
+        color: #949494; font-size: 10px;
+    }
+    header div nav ol li a:hover{
+        color: #000000; text-decoration: underline;
+    }
+
+    header div > div:first-of-type{
+        right:  2.6%; width: 9%; max-width: 130px;
+    }
+    header div > div *:not(:first-child){
+        margin-left: 19%;
+    }
+    header div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header div > div:first-of-type *{
+        width: 20%; text-indent: -9999px; float: left; display: block;
+        line-height: 28px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    header div > div:first-of-type input[type='button']:first-of-type{
+        background-image: url('../images/search.png');
+        border-style: none; background-color: transparent;
+        cursor: pointer;
+    }
+    header div > div:first-of-type a:first-of-type{
+        background-image: url('../images/signIn.png');
+    }
+    header div > div:first-of-type a:nth-of-type(2){
+        background-image: url('../images/cart.png');
+    }
+    header div > div:first-of-type .navBtn{
+        display: none;
+    }
+
+    header div #searchPanel{
+        width: 100%; position: absolute; left: 0; top: 18px; background-color: white;
+    }
+    
+    header div #searchPanel::after{
+        content: ''; display: block; clear: both;
+    }
+    header div #searchPanel label{
+        background: url('../images/search.png') center / contain no-repeat;
+        display: block; text-indent: -9999px; width: 2%; max-width: 25px;
+        float: left; margin-left: 5%;
+    }
+    header div #searchPanel input[type='search']{
+        width: 85%; max-width: 1650px; border-style: none;
+        font-size: 14px; color: #949494; line-height: 28px;
+        margin-left: 3.29%; float: left;
+    }
+    header div #searchPanel input[type='button']{
+        background: url('../images/close.png') center / contain no-repeat;
+        width: 2%; max-width: 25px; display: block; border-style: none;
+        background-color: transparent; text-indent: -9999px; cursor: pointer;
+        line-height: 28px;
+    }
+    
+    body > aside{
+        position: fixed; right: 2.6%; bottom: 5%;
+    }
+    body > aside a{
+        width: 40px; height: 40px; font-size: 0; display: block;
+        border-radius: 20px;
+    }
+    body > aside a:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    body > aside a:first-of-type{background: url('../images/facebookBtn.png') left top / cover no-repeat;}
+    body > aside a:nth-of-type(2){background: url('../images/instagramBtn.png') left top / cover no-repeat;}
+    body > aside a:last-of-type{background: url('../images/topBtn.png') left top / cover no-repeat;}
+
+    footer{
+        width: 100%; max-width: 1279px; padding: 25px 0;
+    }
+    footer p{
+        padding-left: 5%;
+    }
+    footer ul{
+        margin-bottom: 30px;
+    }
+    footer ul::after{
+        content: ''; display: block; clear: both;
+    }
+    footer ul li{
+        display: block; font-weight: 700; float: left; width: 20%;
+    }
+    footer ul li:hover a{
+        color: black; text-decoration: underline;
+    }
+    footer ul li:not(:first-child),
+    footer ul li:not(:nth-child(5)){
+        padding-left: 5%;
+    }
+    footer ul li a{
+        color: #808080; font-size: 12px; line-height: 24px;
+    }
+    footer p{
+        font-family: 'Lato', sans-serif; font-size: 10px;
+        color: #808080; line-height: 18px;
+        width: 87%; max-width: 1115px;
+    }
+}
+/* ?tablet */
+@media screen and (min-width: 1280px) {
+    a{text-decoration: none; color: black;}
+
+    .raleway{font-family: 'Raleway', sans-serif;}
+    .lato{font-family: 'Lato', sans-serif;}
+    
+    .bgTitle{
+        width: 100%; max-width: 1920px; height: 980px; position: relative;
+    }
+    .bgTitle h2{
+        position: absolute;
+    }
+    
+    .btn{
+        box-sizing: border-box;
+    }
+    .outlined{
+        border: 1px solid #c70200; color: #c70200;
+    }
+    .red{
+        background-color: #c70200; color: #ffffff; border-style: none;
+    }
+    .black{
+        background-color: #000000; color: #ffffff; border-style: none;
+    }
+    
+    #bookMark{
+        position: absolute; right: 3%; top: 5%; color: transparent; height: 24px; width: 24px;
+        border-style: none; background-color: #ffffff; cursor: pointer; 
+        background: url('../images/outline_bookmark_border_black_24dp.png') center / 24px no-repeat;
+    }
+    #bookMark.active{
+        background: url('../images/bookmark_FILL.png') center/ 24px no-repeat;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type='checkbox']{
+        display: none;
+    }
+    
+    [id$='Panel']{
+        display: none;
+    }
+    [id$='Panel'].active{
+        display: block;
+    }
+    
+    [id$='Complete']{
+        position: absolute; top: 50%; z-index: 10;
+        transform: translate(0%, -50%); background-color: white;
+        font-family: 'Raleway', sans-serif; border-right: 2px solid black;
+        border-bottom: 2px solid black; display: none;
+    }
+    [id$='Complete'].active{
+        display: block;
+    }
+    [id$='Complete'] span{
+        border-bottom: 1px solid black; width: 90%; display: block;
+        margin: 0 auto; margin-bottom: 35px;
+    }
+    [id$='Complete'] span strong{
+        font-size: 20px; font-weight: 400; line-height: 50px;
+    }
+    [id$='Complete'] p{
+        display: block; width: 100%; text-align: center;
+        font-weight: 300; font-size: 16px;
+    }
+    [id$='Complete'] input[type='submit']{
+        width: 70px; height: 25px; font-weight: 300; font-size: 16px;
+        line-height: 25px; margin-left: 80%; margin-bottom: 30px;
+    }
+    
+    [class$='Component']:not([class$='quantComponent']){
+        display: block; font-family: 'Lato', sans-serif;
+        font-size: 16px; font-weight: 300; color: #000000;
+        max-width: 500px; position: relative;
+        margin-bottom: 70px; border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+    [class$='Component']:not([class$='quantComponent']) label{
+        position: absolute; top: 0; left: 7%; transition-duration: 0.5s;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']){
+        border-style: none; height: 40px;
+        width: 100%; padding-left: 7%;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:not(input[type='button']):focus + label{
+        top: -10%; left: 0; font-size: 14px;
+    }
+    [class$='Component']:not([class$='quantComponent']) input:focus{
+        outline: none;
+    }
+    [class$='Component']:not([class$='quantComponent']) > input[type='button']{
+        position: absolute; right: 0; bottom: 0; width: 25%;
+        max-width: 100px; height: 40px;
+    }
+    
+    .quantComponent{
+        height: 50px; float: left;
+    }
+    .quantComponent > input{
+        width: 50px; height: 50px; box-sizing: border-box; font-size: 18px;
+        font-weight: 400; background-color: transparent; padding: 0;
+        border: 1px solid black;
+    }
+    .quantComponent > input[type='number']{
+        appearance: none; -webkit-appearance: none;
+        text-align: center;
+    }
+    
+    [id='emptyCart']{
+        display: none;
+    }
+    /* bxslider Reset */
+    .bx-wrapper{
+        box-shadow: none;
+        border: none;
+        background: #fff;
+    }
+    
+    .titleBg{
+        width: 100%; max-width: 1920px; margin-bottom: 150px;
+        position: relative;
+    }
+
+    header{
+    position: fixed; left: 0; top: 0;
+    background-color: white; width: 100%; z-index: 1;
+    }
+    header > div{
+        max-width: 1820px; margin: 0 auto; position: relative; line-height: 64px; 
+        padding: 18px 2.6%; box-sizing: border-box;
+    }
+    header div > h1,
+    header div > div:not(#searchPanel){
+        position: absolute; top: 18px;
+    }
+    header div h1{
+        left:  2.6%; width: 3.6%; max-width: 66px;
+    }
+    header div h1 a{
+        display: block; text-indent: -9999px;
+        background: url('../images/mainLogo.png') center / contain no-repeat;
+    }
+
+    header div nav{
+        background-color: white; padding: 0 7.5%; box-sizing: border-box;
+    }
+    header div nav .mui{
+        display: none;
+    }
+    header div nav input[type="checkbox"]{
+        display: none;
+    }
+    header div nav > ul{
+        display: flex; flex-flow: row nowrap; justify-content: space-between;
+        text-align: center;
+    }
+    header div nav > ul > li a,
+    header div nav > ul > li span{
+        font-size: 16px; display: block; text-align: center;
+        width: 100%;
+    }
+    header div nav > ul > li{
+        width: 16.66%; display: flex; flex-flow: column wrap; align-content: flex-start;
+    }
+    header div nav ol{
+        display: none; list-style: none; margin-top: 80px;
+    }
+    header div nav ul:hover ol{
+        display: block;
+    }
+    header div nav ol li{
+        font-size: 14px; line-height: 14px; margin-bottom: 28px;
+    }
+    header div nav ol li a{
+        color: #949494;
+    }
+    header div nav ol li a:hover{
+        color: #000000; text-decoration: underline;
+    }
+
+    header div > div:first-of-type{
+        position: absolute; top: 18px; right:  2.6%; width: 7.14%; max-width: 130px;
+    }
+    header div > div *:not(:first-child){
+        margin-left: 19%;
+    }
+    header div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header div > div:first-of-type *{
+        width: 20.66%; text-indent: -9999px; float: left; display: block;
+        line-height: 64px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    header div > div:first-of-type input[type='button']:first-of-type{
+        background-image: url('../images/search.png');
+        border-style: none; background-color: transparent;
+        cursor: pointer;
+    }
+    header div > div:first-of-type a:first-of-type{
+        background-image: url('../images/signIn.png');
+    }
+    header div > div:first-of-type a:nth-of-type(2){
+        background-image: url('../images/cart.png');
+    }
+    header div > div:first-of-type .navBtn{
+        display: none;
+    }
+
+    header div #searchPanel{
+        width: 100%; position: absolute; left: 0; top: 18px; background-color: white;
+        z-index: 100;
+    }
+    
+    header div #searchPanel::after{
+        content: ''; display: block; clear: both;
+    }
+    header div #searchPanel label{
+        background: url('../images/search.png') center / contain no-repeat;
+        display: block; text-indent: -9999px; width: 1.37%; max-width: 25px;
+        float: left; margin-left: 5%;
+    }
+    header div #searchPanel input[type='search']{
+        width: 85%; max-width: 1650px; border-style: none;
+        font-size: 16px; color: #949494; line-height: 64px;
+        margin-left: 3.29%; float: left;
+    }
+    header div #searchPanel input[type='button']{
+        background: url('../images/close.png') center / contain no-repeat;
+        width: 1.37%; max-width: 25px; display: block; border-style: none;
+        background-color: transparent; text-indent: -9999px; cursor: pointer;
+        line-height: 64px; margin-left: 3.29%;
+    }
+    
+    body > aside{
+        position: fixed; right: 2.6%; bottom: 5%;
+    }
+    body > aside a{
+        width: 40px; height: 40px; font-size: 0; display: block;
+        border-radius: 20px;
+    }
+    body > aside a:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    body > aside a:first-of-type{background: url('../images/facebookBtn.png') left top / cover no-repeat;}
+    body > aside a:nth-of-type(2){background: url('../images/instagramBtn.png') left top / cover no-repeat;}
+    body > aside a:last-of-type{background: url('../images/topBtn.png') left top / cover no-repeat;}
+
+    footer{
+        width: 100%; max-width: 1820px; padding: 25px 0;
+    }
+    footer ul,
+    footer p{
+        padding-left: 2.6%;
+    }
+    footer ul{
+        margin-bottom: 55px;
+    }
+    footer ul li{
+        display: inline-block; font-weight: 700;
+    }
+    footer ul li:hover a{
+        color: black; text-decoration: underline;
+    }
+    footer ul li:not(:first-child){
+        margin-left: 60px;
+    }
+    footer ul li a{
+        color: #808080; font-size: 14px;
+    }
+    footer p{
+        font-family: 'Lato', sans-serif; font-size: 14px;
+        color: #808080; line-height: 18px;
+        width: 87.14%; max-width: 1586px;
+    }
+}
+/* ?desktop */

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Cold-Wall</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/acoldwall.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">A-COLD-WALL</a>
+            </h1>
+            <nav>
+                <ul class="lato">
+                    <li><a href="shopAll.html">SHOP ALL</a></li>
+                    <li>
+                        <span>CATEGORIES</span>
+                        <ol>
+                            <li><a href="outerWear.html">OUTER WEAR</a></li>
+                            <li><a href="knitWear.html">KNIT WEAR</a></li>
+                            <li><a href="top.html">TOP</a></li>
+                            <li><a href="bottom.html">BOTTOM</a></li>
+                            <li><a href="footWear.html">FOOT WEAR</a></li>
+                            <li><a href="bagAccessories.html">BAG & ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLABORATION</span>
+                        <ol>
+                            <li><a href="collaborationConverse.html">Converse</a></li>
+                            <li><a href="collaborationDrMarten.html">Dr.Marten</a></li>
+                            <li><a href="collaborationROA.html">ROA Hiking</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLECTION</span>
+                        <ol>
+                            <li><a href="collection01.html">AUTUMN/WINTER 2022</a></li>
+                            <li><a href="collection02.html">PRE-FALL 2022</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>FOCUS</span>
+                        <ol>
+                            <li><a href="focus01.html">PRE-FALL 2022 CAMPAIGN</a></li>
+                            <li><a href="focus02.html">SS23 INDUSTRIAL<br>COMPOSITIONS</a></li>
+                            <li><a href="focus03.html">AUTUMN/WINTER 2022<br>RUNWAY</a></li>
+                            <li><a href="focus04.html">SERVICE POINT 1</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="brand.html">BRAND</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="searchPanel">
+                <a href="signIn.html">sign in</a>
+                <a href="cart.html">go to cart</a>
+                <input type="button" value="button" class="navBtn">
+            </div>
+            <div id="searchPanel">
+                <label for="search">search</label>
+                <input type="search" id="search" placeholder="Search">
+                <input type="button" class="closeBtn">
+            </div>
+        </div>
+    </header>
+
+    <section class="paymentContainer">
+        <h2>Payment</h2>
+        <div>
+            <strong>Order summary</strong>
+            <ul>
+                <li>
+                    <input type="checkbox" id="listItem1" checked>
+                    <label for="listItem1">
+                        <img src="images/footwear_Product_Converse02_Thumbnail.png" alt="A-COLD-WALL * Conver CHUCK TAYLOR 70 right part side image">
+                    </label>
+                    <div>
+                        <b>[ACW* X CONVERSE] CHUCK TAYLOR 70</b>
+                        <span>color : white / size : US 7</span>
+                        <span>EA : 1</span>
+                        <span>£100</span>
+                    </div>
+                    <div>
+                        <strong>£100</strong>
+                    </div>
+                    <div>
+                        <form action="footWearProductConverseDetail02.html">
+                            <div class="quantComponent">
+                                <input type="button" value="-" id="minus">
+                                <input type="number" class="count" value="1" min="1" max="99" step="1">
+                                <input type="button" value="+" id="plus">
+                            </div>
+                            <input type="submit" value="Change">
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Shopper detail</h3>
+            <span>
+                <label for="userName">Name</label>
+                <input type="text" id="userName" placeholder="Admin" disabled>
+            </span>
+            <span>
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" placeholder="admin@naver.com" disabled>
+            </span>
+            <span>
+                <label for="userNumber">Mobile number</label>
+                <input type="tel" id="userNumber" placeholder="010-1234-5678" disabled>
+            </span>
+        </div>
+        <div>
+            <h3>Shopping address</h3>
+            <div>
+                <input type="button" value="Saved address" data-tabPage="savedAddress" class="active">
+                <input type="button" value="New address" data-tabPage="newAddress">
+                <ul id="savedAddress" class="tabPage active">
+                    <li>
+                        <input type="text" id="userName" placeholder="Admin" disabled>
+                        <label for="userName">NAME</label>
+                    </li>
+                    <li>
+                        <input type="text" id="userAddress" placeholder="Republic of Korea" disabled>
+                        <label for="userAddress">ADDRESS</label>
+                    </li>
+                    <li>
+                            Korea South(82+)
+                    </li>
+                    <li>
+                        <input type="tel" id="userNumber" placeholder="010-1234-5678" disabled>
+                        <label for="userNumber">MOBILE NUMBER</label>
+                    </li>
+                </ul>
+                <ul id="newAddress" class="tabPage">
+                    <li>
+                        <input type="text" id="userName">
+                        <label for="userName">NAME</label>
+                    </li>
+                    <li>
+                        <input type="text" id="userAddress">
+                        <label for="userAddress">ADDRESS</label>
+                    </li>
+                    <li>
+                        Korea South(82+)
+                    </li>
+                    <li>
+                        <input type="tel" id="userNumber">
+                        <label for="userNumber">MOBILE NUMBER</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3>Order total</h3>
+            <ul>
+                <li>
+                    <span>Product Amount</span>
+                    <strong>£100</strong>
+                </li>
+                <li>
+                    <span>Delivery Charge</span>
+                    <strong>£ 0</strong>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <strong>£100</strong>
+                </li>
+            </ul>
+        </div>
+        <input type="button" value="£ 100 checkout" class="btn red">
+    </section>
+
+    <aside>
+        <a href="https://www.facebook.com/acoldwall">facebook</a>
+        <a href="https://www.instagram.com/acoldwall/">instagram</a>
+        <a href="#">topBtn</a>
+    </aside>
+
+    <footer>
+        <ul class="raleway">
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="termsOfService.html">TERMS OF SERVICE</a></li>
+            <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+            <li><a href="refundPolicy.html">REFUND POLICY</a></li>
+            <li><a href="cookiePolicy.html">COOKIE POLICY</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="newsLetter.html">NEWSLETTER</a></li>
+        </ul>
+        <P class="lato">
+            ALL CONTENTS OF THIS WEBSITE ARE THE PROPERTY OF A-COLD-WALL*. NO PART OF THIS SITE, INCLUDING ALL TEXT AND IMAGES, MAY BE REPRODUCED IN ANY FORM WITHOUT THE PRIOR WRITTEN CONSENT OF A-COLD-WALL*.<br>
+            COPYRIGHT © 2022. ALL RIGHTS RESERVED.<br>
+            REGISTERED COMPANY IN ENGLAND AND WALES 09959442.<br>
+            VAT GB263154516.
+        </P>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Cold-Wall</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/acoldwall.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">A-COLD-WALL</a>
+            </h1>
+            <nav>
+                <ul class="lato">
+                    <li><a href="shopAll.html">SHOP ALL</a></li>
+                    <li>
+                        <span>CATEGORIES</span>
+                        <ol>
+                            <li><a href="outerWear.html">OUTER WEAR</a></li>
+                            <li><a href="knitWear.html">KNIT WEAR</a></li>
+                            <li><a href="top.html">TOP</a></li>
+                            <li><a href="bottom.html">BOTTOM</a></li>
+                            <li><a href="footWear.html">FOOT WEAR</a></li>
+                            <li><a href="bagAccessories.html">BAG & ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLABORATION</span>
+                        <ol>
+                            <li><a href="collaborationConverse.html">Converse</a></li>
+                            <li><a href="collaborationDrMarten.html">Dr.Marten</a></li>
+                            <li><a href="collaborationROA.html">ROA Hiking</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLECTION</span>
+                        <ol>
+                            <li><a href="collection01.html">AUTUMN/WINTER 2022</a></li>
+                            <li><a href="collection02.html">PRE-FALL 2022</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>FOCUS</span>
+                        <ol>
+                            <li><a href="focus01.html">PRE-FALL 2022 CAMPAIGN</a></li>
+                            <li><a href="focus02.html">SS23 INDUSTRIAL<br>COMPOSITIONS</a></li>
+                            <li><a href="focus03.html">AUTUMN/WINTER 2022<br>RUNWAY</a></li>
+                            <li><a href="focus04.html">SERVICE POINT 1</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="brand.html">BRAND</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="searchPanel">
+                <a href="signIn.html">sign in</a>
+                <a href="cart.html">go to cart</a>
+                <input type="button" value="button" class="navBtn">
+            </div>
+            <div id="searchPanel">
+                <label for="search">search</label>
+                <input type="search" id="search" placeholder="Search">
+                <input type="button" class="closeBtn">
+            </div>
+        </div>
+    </header>
+
+    <section class="detailContainer">
+        <h2>MINAAR HIKING SHOE</h2>
+        <div>
+            <div class="lato">
+                <label for="size">size</label>
+                <select id="size">
+                    <option selected>SELECT SIZE</option>
+                    <option>6 UK</option>
+                    <option>7 UK</option>
+                    <option>8 UK</option>
+                    <option>9 UK</option>
+                    <option>10 UK</option>
+                    <option>11 UK</option>
+                    <option>12 UK</option>
+                </select>
+                <div class="quantComponent">
+                    <label for="plus">QTY</label>
+                    <input type="button" value="-" id="minus">
+                    <input type="number" class="count" value="1" min="1" max="99" step="1">
+                    <input type="button" value="+" id="plus">
+                </div>
+                <a href="#sizeGuide">SIZE GUIDE</a>
+            </div>
+        <div>
+            <strong>£330</strong>
+                <a href="cart.html" class="btn outlined">ADD TO CART</a>
+                <a href="payMent.html" class="btn red">CHECK OUT</a>
+            </div>
+        </div>
+        <div>
+            <img src="images/footwear_Product_ROA06_Thumbnail.png" alt="A-COLD-WALL * ROA.Hiking ANDREAS HIKING BOOT right part side image">
+            <img src="images/footwear_Product_ROA06_Thumbnail_hover.png" alt="A-COLD-WALL * ROA.Hiking ANDREAS HIKING BOOT diagonal image">
+        </div>
+        <div>
+            <h3>DESCRIPTION</h3>
+            <ul>
+                <li>
+                    <img src="images/footwear_Product_ROA06_Detail03.png" alt="A-COLD-WALL * ROA.Hiking ANDREAS HIKING BOOT top image">
+                </li>
+                <li>
+                    <img src="images/footwear_Product_ROA06_Detail04.png" alt="A-COLD-WALL * ROA.Hiking ANDREAS HIKING BOOT front image">
+                </li>
+                <li>
+                    <img src="images/footwear_Product_ROA06_Thumbnail.png" alt="A-COLD-WALL * ROA.Hiking ANDREAS HIKING BOOT diagonal image">
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li id="sizeGuide">
+                <h3>SIZE GUIDE</h3>
+                <table class="threeTable">
+                    <caption>size guide</caption>
+                    <thead>
+                        <tr>
+                            <th>KOR(mm)</th>
+                            <th>UK(UK)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>240</td>
+                            <td>5.5</td>
+                        </tr>
+                        <tr>
+                            <td>245</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>250</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>255</td>
+                            <td>6.5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>260</strong></td>
+                            <td><strong>7</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>265</strong></td>
+                            <td><strong>7.5</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="threeTable">
+                    <caption>size guide</caption>
+                    <thead>
+                        <tr>
+                            <th>KOR(mm)</th>
+                            <th>UK(UK)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>270</strong></td>
+                            <td><strong>8</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>275</strong></td>
+                            <td><strong>8.5</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>280</strong></td>
+                            <td><strong>9</strong></td>
+                        </tr>
+                        <tr>
+                            <td>285</td>
+                            <td>9.5</td>
+                        </tr>
+                        <tr>
+                            <td>290</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>295</td>
+                            <td>10.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="threeTable">
+                    <caption>size guide</caption>
+                    <thead>
+                        <tr>
+                            <th>KOR(mm)</th>
+                            <th>UK(UK)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>300</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>305</td>
+                            <td>11.5</td>
+                        </tr>
+                        <tr>
+                            <td>310</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>315</td>
+                            <td>12.5</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h3>ABOUT PRODUCT</h3>
+                <ul>
+                    <li>Water-resistant coated calf leather upper.</li>
+                    <li>Neoprene hi-top sock insert.</li>
+                    <li>Silver ACW asterisk studs to upper and heel counter.</li>
+                    <li>True-to-size fit.</li>
+                    <li>Thermoplastic rubber sole.</li>
+                    <li>Contrast ACW bracket logo.</li>
+                    <li>Slip-on.</li>
+                    <li>100% leather.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>SHOPPING &amp; RETURN</h3>
+                <div>
+                    <h4>Online Shopping</h4>
+                    <ul>
+                        <li>
+                            <mark>Do you process exchanges?</mark>
+                            - We do not offer exchanges at this time. Please return<br>
+                            your unwanted order through our Return Centre and then purchase<br>
+                            your preferred item in a new order.<br>
+                        </li>
+                        <li>
+                            <mark>Can I cancel my order?</mark>
+                            - Orders are processed automatically,<br>
+                            therefore, once you receive confirmation of your order unfortunately<br>
+                            it cannot be cancelled. If you wish to return your order,<br>
+                            please first check if it is eligible (see ‘Which items are returnable’ below.)<br>
+                            If it meets the conditions of return, proceed to the Return Centre.<br>
+                        </li>
+                        <li>
+                            <mark>What does my Order Status mean?</mark>
+                            - Processing - Your payment has been received<br>
+    
+                            Completed - The order has been fulfilled and completed<br>
+    
+                            On-hold - Your item has been reserved but we are awaiting your payment<br>
+    
+                            Cancelled - The order has been cancelled.<br>
+    
+                            Refunded - The order has been fully refunded.<br>
+    
+                            Partially refunded - Certain items within your order have been refunded.<br>
+                            This often refers to a sale where either products are cancelled<br>
+                            but there are remaining items in the order to be fulfilled or when an<br>
+                            order is only partially returned.<br>
+                        </li>
+                        <li>
+                            <mark>Which Payment Methods can I use?</mark>
+                            - We accept the following payment methods:<br>
+                            Visa, MasterCard, American Express, JCB, Visa Electron,<br>
+                            Maestro enabled debit cards.<br>
+    
+                            A-COLD-WALL* offers a fast and convenient purchase method<br>
+                            allowing you to save your credit card and shipping details for<br>
+                            future purchases.<br>
+    
+                            We also accept a selection of fast & convenient payment methods<br>
+                            allowing you to purchase without entering your credit card details<br>
+                            on the website. Your account will be charged once the order is completed.<br>
+                            These include: Paypal, Apple Pay, Amazon Pay and Google Pay.<br>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>International Return</h4>
+                    <ul>
+                        <li>
+                            <mark>I purchased a collaborative item, can I return it?</mark>
+                            - All sales are final for collaborative items, <br>
+                            therefore we cannot accept return of these items.<br>
+                        </li>
+                        <li>
+                            <mark>Which items are returnable?</mark>
+                            - Faulty and unused non-collaborative items may be returned to A-COLD-WALL*.<br>
+                            Please ensure before you return an item that all tags are<br>
+                            attached and all original packaging is present and intact.<br>
+                            For footwear, please place the shoebox inside protective packaging.<br>
+    
+                            You have <mark>14 days</mark> from the date of delivery to return<br>
+                            items purchased on A-COLD-WALL*.<br>
+                        </li>
+                        <li>
+                            <mark>How do I request a return?</mark>
+                            - If your item is eligible for return under the conditions stated above,<br>
+                               please visit the Return Centre and follow the instructions below:<br>
+    
+                               Insert your order number and email address<br>
+    
+                               Select the item you want to return<br>
+    
+                               State the reason for your return<br>
+    
+                               Select your preferred refund method, either the original payment method<br>
+                               or store credit<br>
+    
+                               Select your preferred shipping method if prompted<br>
+    
+                               Your return will then be processed by customer service who will share<br>
+                               further instructions via email.<br>
+    
+                               Please note that responsibility and cost for the safe return of the item<br>
+                               rests with the customer. We strongly advise you to return the item using<br>
+                               a tracked service. Original shipping costs will not be refunded and inbound<br>
+                               costs will not be covered. A-COLD-WALL* cannot expedite or track<br>
+                               returned packages.<br>
+                        </li>
+                        <li>
+                            <mark>Do you offer exchanges?</mark>
+                            - We do not offer exchanges at this time. Please return your<br>
+                            unwanted order through our Return Centre and then purchase<br>
+                            your preferred item in a new order.<br>
+                        </li>
+                        <li>
+                            <mark>When will my refund be issued?</mark>
+                            - Once we receive your returned item we will issue a refund<br>
+                               via your original payment method, please allow 5-7 working days<br>
+                               for this to be processed.<br>
+                            
+                               Please note - duties and customs paid at delivery are not refundable.<br>
+                                                        To enquire if you are eligible for a duty/customs refund,<br>
+                                                        please contact your local customs agency directly.<br>
+                                                        If you have any questions regarding this process or need<br>
+                                                        assistance please contact our support team.<br>
+                            
+                        </li>
+                        <li>
+                            <mark>What do I do if my item is faulty?</mark>
+                            - If your item is faulty, please visit our Return Centre,<br>
+                            enter your Order Number, state your reason for return as FAULTY ITEM,<br>
+                            describe the fault and additionally, provide pictures of the fault.<br>
+                            Our team will then process your return request.<br>
+                        </li>
+                        <li>
+                            <mark>What if my A-COLD-WALL* item is faulty but I did not purchase it from the A-COLD-WALL* website?</mark>
+                            - If your item was not purchased from the A-COLD-WALL* website<br>
+                            we unfortunately cannot accept it as a return. Please refer to the<br>
+                            returns policy of the retailer from which you originally purchased the item<br>
+                            or contact them directly to discuss further.<br>
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <aside>
+        <a href="https://www.facebook.com/acoldwall">facebook</a>
+        <a href="https://www.instagram.com/acoldwall/">instagram</a>
+        <a href="#">topBtn</a>
+    </aside>
+
+    <footer>
+        <ul class="raleway">
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="termsOfService.html">TERMS OF SERVICE</a></li>
+            <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+            <li><a href="refundPolicy.html">REFUND POLICY</a></li>
+            <li><a href="cookiePolicy.html">COOKIE POLICY</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="newsLetter.html">NEWSLETTER</a></li>
+        </ul>
+        <P class="lato">
+            ALL CONTENTS OF THIS WEBSITE ARE THE PROPERTY OF A-COLD-WALL*. NO PART OF THIS SITE, INCLUDING ALL TEXT AND IMAGES, MAY BE REPRODUCED IN ANY FORM WITHOUT THE PRIOR WRITTEN CONSENT OF A-COLD-WALL*.<br>
+            COPYRIGHT © 2022. ALL RIGHTS RESERVED.<br>
+            REGISTERED COMPANY IN ENGLAND AND WALES 09959442.<br>
+            VAT GB263154516.
+        </P>
+    </footer>
+</body>
+</html>

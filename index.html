@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Cold-Wall</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/acoldwall.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">A-COLD-WALL</a>
+            </h1>
+            <nav>
+                <ul class="lato">
+                    <li><a href="shopAll.html">SHOP ALL</a></li>
+                    <li>
+                        <span>CATEGORIES</span>
+                        <ol>
+                            <li><a href="outerWear.html">OUTER WEAR</a></li>
+                            <li><a href="knitWear.html">KNIT WEAR</a></li>
+                            <li><a href="top.html">TOP</a></li>
+                            <li><a href="bottom.html">BOTTOM</a></li>
+                            <li><a href="footWear.html">FOOT WEAR</a></li>
+                            <li><a href="bagAccessories.html">BAG & ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLABORATION</span>
+                        <ol>
+                            <li><a href="collaborationConverse.html">Converse</a></li>
+                            <li><a href="collaborationDrMarten.html">Dr.Marten</a></li>
+                            <li><a href="collaborationROA.html">ROA Hiking</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLECTION</span>
+                        <ol>
+                            <li><a href="collection01.html">AUTUMN/WINTER 2022</a></li>
+                            <li><a href="collection02.html">PRE-FALL 2022</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>FOCUS</span>
+                        <ol>
+                            <li><a href="focus01.html">PRE-FALL 2022 CAMPAIGN</a></li>
+                            <li><a href="focus02.html">SS23 INDUSTRIAL<br>COMPOSITIONS</a></li>
+                            <li><a href="focus03.html">AUTUMN/WINTER 2022<br>RUNWAY</a></li>
+                            <li><a href="focus04.html">SERVICE POINT 1</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="brand.html">BRAND</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="searchPanel">
+                <a href="signIn.html">sign in</a>
+                <a href="cart.html">go to cart</a>
+                <input type="button" value="button" class="navBtn">
+            </div>
+            <div id="searchPanel">
+                <label for="search">search</label>
+                <input type="search" id="search" placeholder="Search">
+                <input type="button" class="closeBtn">
+            </div>
+        </div>
+    </header>
+        
+    <section class="mainContainer">
+        <div class="bgTitle main">
+            <h2 class="raleway">
+                <a href="collaborationConverse.html">ACW* X Converse</a>
+            </h2>
+        </div>
+
+        <ul class="threePart">
+            <li>
+                <a href="collaborationDrMarten.html">
+                    <img src="images/collaboration01_Section02_03.png" alt="Click to go to the collaboration Dr.Marten page">
+                </a>
+                <h3>Dr.Marten Collraboration</h3>
+                <span>
+                    1460 Gehry Boot in Bone
+                    The 1460 boot is reinterpreted in a stark, monochromatic
+                    colourway. The allover white palette extends to a white
+                    zipper and transparent sole, bold visual additions that
+                    optimises the boots’ postmodern aesthetic.
+                </span>
+            </li>
+            <li>
+                <a href="collaborationConverse.html">
+                    <img src="images/collaboration02_Section01_02.png" alt="Click to go to the collaboration converse page">
+                </a>
+                <h3>Converse Collraboration</h3>
+                <span>
+                    Lancey Foux Debuts Geo Forma in 032c
+                    British rapper Lancey Foux debuts the Geo Forma 
+                    in an exclusive interview with 032c.
+                    Read the Article
+                </span>                
+            </li>
+            <li>
+                <a href="collaborationROA.html">
+                    <img src="images/collaboration03_Section04_02.png" alt="Click to go to the collaboration ROA Hiking page">
+                </a> 
+                <h3>ROA Hiking Collraboration</h3>
+                <span>A-COLD-WALL* ROA Hiking for Autumn/Winter 2022</span>
+            </li>
+        </ul>
+
+        <div class="giftForAll">
+            <h2>GIFT FOR ALL</h2>
+            <ul>
+                <li>
+                    <a href="top.html">
+                        <img src="images/top_Product07_Detail04.png" alt="Click to go to the top list page">
+                    </a>
+                    <h3>TOPS</h3>
+                </li>
+                <li>
+                    <a href="bottom.html">
+                        <img src="images/bottom_Product04_Thumbnail_hover.png" alt="Click to go to the bottom list page">
+                    </a>
+                    <h3>BOTTOMS</h3>                    
+                </li>
+                <li>
+                    <a href="footWear.html">
+                        <img src="images/footwear_Product_Converse03_Detail07.png" alt="Click to go to the foot wear list page">
+                    </a>
+                    <h3>FOOT WEAR</h3>                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="multiTab">
+            <input type="button" value="TOPS" data-tabPage="tops" class="active">
+            <input type="button" value="OUTER WEAR" data-tabPage="outer">
+            <input type="button" value="KNIT WEAR" data-tabPage="knit">
+            <ul id="tops" class="tabPage active">
+                <li>
+                    <a href="topProductDetail01.html">
+                        <img src="images/top_Product01_Thumbnail.png" alt="Click to go to the top product BRUTALIST GRAPHIC T-SHIRT detail page">
+                    </a>
+                    <div>
+                        <h3>BRUTALIST GRAPHIC T-SHIRT</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 180</span>
+                </li>
+                <li>
+                    <a href="topProductDetail03.html">
+                        <img src="images/top_Product03_Thumbnail.png" alt="Click to go to the top product BRUTALIST ZIP HOODIE detail page">
+                    </a>
+                    <div>
+                        <h3>BRUTALIST ZIP HOODIE</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 360</span>
+                </li>
+                <li>
+                    <a href="topProductDetail04.html">
+                        <img src="images/top_Product04_Thumbnail.png" alt="Click to go to the top product RELAXED STUDIO CREWNECK detail page">
+                    </a>
+                    <div>
+                        <h3>RELAXED STUDIO CREWNECK</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 330</span>
+                </li>
+                <li>
+                    <a href="topProductDetail05.html">
+                        <img src="images/top_Product05_Thumbnail.png" alt="Click to go to the top product RELAXED CUBIST LS T-SHIRT detail page">
+                    </a>
+                    <div>
+                        <h3>RELAXED CUBIST LS T-SHIRT</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 240</span>
+                </li>
+            </ul>
+             <ul id="outer" class="tabPage">
+                <li>
+                    <a href="outerWearProductDetail01.html">
+                        <img src="images/outwear_Product01_Thumbnail.png" alt="Click to go to the outer wear product AXIS FLEECE detail page">
+                    </a>
+                    <div>
+                        <h3>AXIS FLEECE</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 450</span>
+                </li>
+                <li>
+                    <a href="outerWearProductDetail03.html">
+                        <img src="images/outwear_Product03_Thumbnail.png" alt="Click to go to the outer wear product GRASMOOR STORM JACKET detail page">
+                    </a>
+                    <div>
+                        <h3>GRASMOOR STORM JACKET</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 485</span>
+                </li>
+                <li>
+                    <a href="outerWearProductDetail04.html">
+                        <img src="images/outwear_Product04_Thumbnail.png" alt="Click to go to the outer wear product FORM GILET detail page">
+                    </a>
+                    <div>
+                        <h3>FORM GILET</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 950</span>
+                </li>
+                <li>
+                    <a href="outerWearProductDetail06.html">
+                        <img src="images/outwear_Product06_Thumbnail.png" alt="Click to go to the outer wear product NEPHIN STORM GILET detail page">
+                    </a>
+                    <div>
+                        <h3>NEPHIN STORM GILET</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 450</span>
+                </li>
+             </ul>
+             <ul id="knit" class="tabPage">
+                <li>
+                    <a href="knitWearProductDetail02.html">
+                        <img src="images/knitwear_Product02_Thumbnail.png" alt="Click to go to the knit wear product TWO-TONE JACQUARD KNIT detail page">
+                    </a>
+                    <div>
+                        <h3>SPRAYED JACQUARD KNIT</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 500</span>
+                </li>
+                <li>
+                    <a href="knitWearProductDetail03.html">
+                        <img src="images/knitwear_Product03_Thumbnail.png" alt="Click to go to the knit wear product GRADIENT CARDIGAN detail page">
+                    </a>
+                    <div>
+                        <h3>GRADIENT CARDIGAN</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 550</span>
+                </li>
+                <li>
+                    <a href="knitWearProductDetail05.html">
+                        <img src="images/knitwear_Product05_Thumbnail.png" alt="Click to go to the knit wear product STRIA ZIPPED KNIT detail page">
+                    </a>
+                    <div>
+                        <h3>STRIA ZIPPED KNIT</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 550</span>
+                </li>
+                <li>
+                    <a href="knitWearProductDetail01.html">
+                        <img src="images/knitwear_Product01_Thumbnail.png" alt="Click to go to the knit wear product SPRAYED JACQUARD KNIT detail page">
+                    </a>
+                    <div>
+                        <h3>SPRAYED JACQUARD KNIT</h3>
+                        <input type="button" value="bookMark" id="bookMark">
+                    </div>
+                    <span>£ 600</span>
+                </li>
+             </ul>
+        </div>
+
+        <div class="focus02Wrap">
+            <div>
+                <h3 class="raleway">SS23<br>INDUSTRIAL<br>COMPOSITIONS</h3>
+                <a href="focus02.html">LEARN MORE</a>
+            </div>
+        </div>
+
+        <div class="brandWrap">
+            <div>
+                <div>A-COLD-WALL</div>
+                <a href="brand.html" class="red">LEARN MORE</a>
+            </div>            
+        </div>
+
+        <ul class="threePart">
+            <li>
+                <a href="footWearProductDetail01.html">
+                    <img src="images/second_threePart01.png" alt="Click to go to the foot wear product NYLON LOAFERS detail page">
+                </a>
+                <h3 class="raleway">NYLON<br>LOAFERS</h3>
+                <span class="lato">
+                    A comfort-fit shoe for everyday use both indoors and out,
+                    this nylon sock loafer features an adjustable drawcord for
+                    an adaptable fit 
+                </span>
+            </li>
+            <li>
+                <a href="footWearProductDetail03.html">
+                    <img src="images/second_threePart02.png" alt="Click to go to the foot wear product NC.1 DIRT BOOT detail page">
+                </a>
+                <h3 class="raleway">NC.1<br>DIRT BOOT</h3>
+                <span class="lato">
+                    Hi-top rubberised leather and neoprene sneaker with
+                    performance coating
+                </span>
+            </li>
+            <li>
+                <a href="footWearProductDetail04.html">
+                    <img src="images/second_threePart03.png" alt="Click to go to the foot wear product SHARD TRACK SNEAKERS detail page">
+                </a>
+                <h3 class="raleway">SHARD TRACK<br>SNEAKERS</h3>
+                <span class="lato">
+                    A returning A-COLD-WALL* style, the Shard III is presented in 
+                    a lo-top silhouette, constructed from soft calf leather with
+                    a tactile suede trim
+                </span>
+            </li>
+        </ul>
+
+        <div class="slideNTwoPart">
+            <ul class="sideWay1Slider">
+                <li>
+                    <a href="collaborationDrMarten.html">
+                        <img src="images/collaboration01_Section03_01.png" alt="Click to go to the A-COLD-WALL * Dr.Marten collaboration page">
+                        <h3>ACW * X Dr.Marten</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="collaborationConverse.html">
+                        <img src="images/collaboration02_Section01_02.png" alt="Click to go to the A-COLD-WALL * Converse collaboration page">
+                        <h3>ACW * X Converse</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="collaborationROA.html">
+                        <img src="images/collaboration03_Section04_03.png" alt="Click to go to the A-COLD-WALL * ROA Hiking collaboration page">
+                        <h3>ACW * X ROA Hiking</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul class="twoPart">
+                <li>
+                    <a href="footWearProductConverseDetail01.html">
+                        <img src="images/twoPart01.png" alt="Click to go to the A-COLD-WALL * Converse foot wear product SPONGE CRATER CX SNEAKER detail page">
+                    </a>
+                    <h3>[ACW* X Converse] SPONGE CRATER CX SNEAKER</h3>
+                    <span>£100</span>
+                </li>
+                <li>
+                    <a href="footWearProductConverseDetail02.html">
+                        <img src="images/twoPart02.png" alt="Click to go to the A-COLD-WALL * Converse foot wear product CHUCK TAYLOR 70 detail page">
+                    </a>
+                    <h3>[ACW* X Converse] CHUCK TAYLOR 70</h3>
+                    <span>£100</span>
+                </li>
+                <li>
+                    <a href="footWearProductDrMartenDetail01.html">
+                        <img src="images/twoPart03.png" alt="Click to go to the A-COLD-WALL * Dr.Marten foot wear product 1460 GEHRY BOOT detail page">
+                    </a>
+                    <h3>[ACW* X Dr.Martens] 1460 GEHRY BOOT</h3>
+                    <span>£289</span>
+                </li>
+                <li>
+                    <a href="footWearProductROADetail02.html">
+                        <img src="images/twoPart04.png" alt="Click to go to the A-COLD-WALL * ROA Hiking foot wear product 3L TECH PANTS detail page">
+                    </a>
+                    <h3>3L TECH PANTS</h3>
+                    <span>£400</span>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="raleway way4Slider">
+            <li>
+                <a href="top.html">
+                    <img src="images/way4Slider01.png" alt="Click to go to the top list page">
+                </a>
+                <h2>Tops</h2>
+            </li>
+            <li>
+                <a href="outerWear.html">
+                    <img src="images/way4Slider02.png" alt="Click to go to the outer wear list page">
+                </a>
+                <h2>Outer Wear</h2>
+            </li>
+            <li>
+                <a href="knitWear.html">
+                    <img src="images/way4Slider03.png" alt="Click to go to the knit wear list page">
+                </a>
+                <h2>Knit Wear</h2>
+            </li>
+            <li>
+                <a href="bottom.html">
+                    <img src="images/way4Slider04.png" alt="Click to go to the bottom list page">
+                </a>
+                <h2>Bottoms</h2>
+            </li>
+            <li>
+                <a href="footWear.html">
+                    <img src="images/way4Slider05.png" alt="Click to go to the foot wear list page">
+                </a>            
+                <h2>Foot Wear</h2>
+            </li>
+            <li>
+                <a href="bagAccessories.html">
+                    <img src="images/way4Slider06.png" alt="Click to go to the bag & accessories list page">
+                </a>
+                <h2>Bag & Accessories</h2>
+            </li>
+        </ul>
+    </section>
+
+    <aside>
+        <a href="https://www.facebook.com/acoldwall">facebook</a>
+        <a href="https://www.instagram.com/acoldwall/">instagram</a>
+        <a href="#">topBtn</a>
+    </aside>
+    
+    <footer>
+        <ul class="raleway">
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="termsOfService.html">TERMS OF SERVICE</a></li>
+            <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+            <li><a href="refundPolicy.html">REFUND POLICY</a></li>
+            <li><a href="cookiePolicy.html">COOKIE POLICY</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="newsLetter.html">NEWSLETTER</a></li>
+        </ul>
+        <P class="lato">
+            ALL CONTENTS OF THIS WEBSITE ARE THE PROPERTY OF A-COLD-WALL*. NO PART OF THIS SITE, INCLUDING ALL TEXT AND IMAGES, MAY BE REPRODUCED IN ANY FORM WITHOUT THE PRIOR WRITTEN CONSENT OF A-COLD-WALL*.<br>
+            COPYRIGHT © 2022. ALL RIGHTS RESERVED.<br>
+            REGISTERED COMPANY IN ENGLAND AND WALES 09959442.<br>
+            VAT GB263154516.
+        </P>
+    </footer>
+</body>
+</html>

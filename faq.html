@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Cold-Wall</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/acoldwall.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">A-COLD-WALL</a>
+            </h1>
+            <nav>
+                <ul class="lato">
+                    <li><a href="shopAll.html">SHOP ALL</a></li>
+                    <li>
+                        <span>CATEGORIES</span>
+                        <ol>
+                            <li><a href="outerWear.html">OUTER WEAR</a></li>
+                            <li><a href="knitWear.html">KNIT WEAR</a></li>
+                            <li><a href="top.html">TOP</a></li>
+                            <li><a href="bottom.html">BOTTOM</a></li>
+                            <li><a href="footWear.html">FOOT WEAR</a></li>
+                            <li><a href="bagAccessories.html">BAG & ACCESSORIES</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLABORATION</span>
+                        <ol>
+                            <li><a href="collaborationConverse.html">Converse</a></li>
+                            <li><a href="collaborationDrMarten.html">Dr.Marten</a></li>
+                            <li><a href="collaborationROA.html">ROA Hiking</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>COLLECTION</span>
+                        <ol>
+                            <li><a href="collection01.html">AUTUMN/WINTER 2022</a></li>
+                            <li><a href="collection02.html">PRE-FALL 2022</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span>FOCUS</span>
+                        <ol>
+                            <li><a href="focus01.html">PRE-FALL 2022 CAMPAIGN</a></li>
+                            <li><a href="focus02.html">SS23 INDUSTRIAL<br>COMPOSITIONS</a></li>
+                            <li><a href="focus03.html">AUTUMN/WINTER 2022<br>RUNWAY</a></li>
+                            <li><a href="focus04.html">SERVICE POINT 1</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="brand.html">BRAND</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="button" value="searchPanel">
+                <a href="signIn.html">sign in</a>
+                <a href="cart.html">go to cart</a>
+                <input type="button" value="button" class="navBtn">
+            </div>
+            <div id="searchPanel">
+                <label for="search">search</label>
+                <input type="search" id="search" placeholder="Search">
+                <input type="button" class="closeBtn">
+            </div>
+        </div>
+    </header>
+
+    <section class="faqContainer">
+        <h2>FAQ</h2>
+        <p>
+            Welcome to A-COLD-WALL* Customer Service.<br>
+            Here you can reference our policies, frequently asked questions, orders and returns tracking.
+            Our Customer Service Team will be happy to give you further assistance on all other enquiries.
+        </p>
+        <div>
+            <h3>Online Shopping</h3>
+            <ul>
+                <li>
+                    <strong>Do you process exchanges?</strong>
+                    <p>
+                        We do not offer exchanges at this time.<br>
+                        Please return your unwanted order through
+                        our Return Centre and then purchase your preferred item in a new order.
+                    </p>
+                </li>
+                <li>
+                    <strong>Can I cancel my order?</strong>
+                    <p>
+                        Orders are processed automatically, therefore,<br>
+                        once you receive confirmation of
+                        your order unfortunately it cannot be cancelled.<br>
+                        If you wish to return your order, please first check if it is eligible
+                        (see ‘Which items are returnable’ below.)
+                        If it meets the conditions of return, proceed to the Return Centre.
+                    </p>
+                </li>
+                <li>
+                    <strong>What does my Order Status mean?</strong>
+                    <ul>
+                        <li>Processing - Your payment has been received</li>
+                        <li>Completed - The order has been fulfilled and completed</li>
+                        <li>On-hold - Your item has been reserved but we are awaiting your payment</li>
+                        <li>Cancelled - The order has been cancelled.</li>
+                        <li>Refunded - The order has been fully refunded.</li>
+                        <li>
+                            Partially refunded - Certain items within your order have been refunded.
+                                                 This often refers to a sale where either products are cancelled
+                                                 but there are remaining items in the order to be fulfilled or
+                                                 when an order is only partially returned.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Which Payment Methods can I use?</strong>
+                    <p>
+                        We accept the following payment methods:
+                        <br>
+                        Visa, MasterCard, American Express, JCB, Visa Electron, Maestro enabled debit cards.
+                        <br>
+                        A-COLD-WALL* offers a fast and convenient purchase method allowing you to
+                        save your credit card and shipping details for future purchases.
+                        <br>
+                        We also accept a selection of fast & convenient payment methods allowing you
+                        to purchase without entering your credit card details on the website.
+                        Your account will be charged once the order is completed.
+                        These include: Paypal, Apple Pay, Amazon Pay and Google Pay.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Domestic and EU Returns</h3>
+            <ul>
+                <li>
+                    <strong>Which items are returnable?</strong>
+                    <p>
+                        Faulty and unused items may be returned to A-COLD-WALL*.
+                        Please ensure before you return an item that all tags are attached and
+                        all original packaging is present and intact.
+                        For footwear, please place the shoebox inside protective packaging.
+                    </p>
+                </li>
+                <li>
+                    <strong>How long do I have to return an order?</strong>
+                    <p>
+                        You have 14 days from the date of delivery to
+                        return items purchased on A-COLD-WALL*.
+                    </p>
+                </li>
+                <li>
+                    <strong>How do I request a return?</strong>
+                    <p>
+                        If your item is eligible for return under the conditions stated above,
+                        please visit the Return Centre and follow the instructions below:
+                        <br>
+                        Insert your order number and email address
+                        <br>
+                        Select the item you want to return
+                        <br>
+                        State the reason for your return
+                        <br>
+                        Select your preferred refund method, either the original payment method
+                        or store credit
+                        <br>
+                        Select your preferred shipping method if prompted
+                        <br>
+                        Your return will then be processed by customer service
+                        who will share further instructions via email.
+                        <br>
+                        Please note that responsibility and cost for the safe return of the item rests
+                        with the customer. We strongly advise you to return the item using
+                        a tracked service. Original shipping costs will not be refunded
+                        and inbound costs will not be covered. A-COLD-WALL* cannot expedite
+                        or track returned packages.
+                    </p>
+                </li>
+                <li>
+                    <strong>Do you offer exchanges?</strong>
+                    <p>
+                        We do not offer exchanges at this time.
+                        Please return your unwanted order through our Return Centre
+                        and then purchase your preferred item in a new order.
+                    </p>
+                </li>
+                <li>
+                    <strong>When will my refund be issued?</strong>
+                    <p>
+                        Once we receive your returned item and it has passed a quality check
+                        at the warehouse we will issue a refund via your original payment method,
+                        please allow 5-7 working days for this to be processed.
+                    </p>
+                </li>
+                <li>
+                    <strong>What do I do if my item is faulty?</strong>
+                    <p>
+                        If your item is faulty, please visit our Return Centre,
+                        enter your Order Number, state your reason for return as FAULTY ITEM,
+                        describe the fault and additionally, provide pictures of the fault.
+                        Customer service will review your request and share further instructions via email.
+                    </p>
+                </li>
+                <li>
+                    <strong>
+                        What if my A-COLD-WALL* item is faulty but I did not purchase it
+                        from the A-COLD-WALL* website?
+                    </strong>
+                    <p>
+                        If your item was not purchased from the A-COLD-WALL* website
+                        we unfortunately cannot accept it as a return.
+                        Please refer to the returns policy of the retailer from which you originally
+                        purchased the item or contact them directly to discuss further.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>International Returns</h3>
+            <ul>
+                <li>
+                    <strong>I purchased a collaborative item, can I return it?</strong>
+                    <p>
+                        All sales are final for collaborative items,
+                        therefore we cannot accept return of these items.
+                    </p>
+                </li>
+                <li>
+                    <strong>Which items are returnable?</strong>
+                    <p>
+                        Faulty and unused non-collaborative items may be returned
+                        to A-COLD-WALL*.
+                        Please ensure before you return an item that all tags are attached
+                        and all original packaging is present and intact.
+                        For footwear, please place the shoebox inside protective packaging.
+                        <br>
+                        You have 14 days from the date of delivery
+                        to return items purchased on A-COLD-WALL*.
+                    </p>
+                </li>
+                <li>
+                    <strong>How do I request a return?</strong>
+                    <p>
+                        If your item is eligible for return under the conditions stated above,
+                        please visit the Return Centre and follow the instructions below:
+                        <br>
+                        Insert your order number and email address
+                        <br>
+                        Select the item you want to return
+                        <br>
+                        State the reason for your return
+                        <br>
+                        Select your preferred refund method, either the original payment method
+                        or store credit
+                        <br>
+                        Select your preferred shipping method if prompted
+                        <br>
+                        Your return will then be processed by customer service
+                        who will share further instructions via email.
+                        <br>
+                        Please note that responsibility and cost for the safe return of the item rests
+                        with the customer.
+                        We strongly advise you to return the item using a tracked service.
+                        Original shipping costs will not be refunded and inbound costs will not be covered.
+                        A-COLD-WALL* cannot expedite or track returned packages.
+                    </p>
+                </li>
+                <li>
+                    <strong>Do you offer exchanges?</strong>
+                    <p>
+                        We do not offer exchanges at this time.
+                        Please return your unwanted order through our Return Centre and
+                        then purchase your preferred item in a new order.
+                    </p>
+                </li>
+                <li>
+                    <strong>When will my refund be issued?</strong>
+                    <p>
+                        Once we receive your returned item we will issue a refund via
+                        your original payment method, please allow 5-7 working days
+                        for this to be processed.
+                        <br>
+                        Please note - duties and customs paid at delivery are not refundable.
+                        To enquire if you are eligible for a duty/customs refund,
+                        please contact your local customs agency directly.
+                        If you have any questions regarding this process or need assistance
+                        please contact our support team.
+                    </p>
+                </li>
+                <li>
+                    <strong>What do I do if my item is faulty?</strong>
+                    <p>
+                        If your item is faulty, please visit our Return Centre, enter your Order Number,
+                        state your reason for return as FAULTY ITEM, describe the fault and additionally,
+                        provide pictures of the fault. Our team will then process your return request.
+                    </p>
+                </li>
+                <li>
+                    <strong>
+                        What if my A-COLD-WALL* item is faulty but I did not purchase it
+                        from the A-COLD-WALL* website?
+                    </strong>
+                    <p>
+                        If your item was not purchased from
+                        the A-COLD-WALL* website we unfortunately
+                        cannot accept it as a return. Please refer to the returns policy of
+                        the retailer from which you originally purchased the item or
+                        contact them directly to discuss further.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Shopping</h3>
+            <ul>
+                <li>
+                    <strong>When will I receive tracking information?</strong>
+                    <p>
+                        Once your item has been dispatched from our warehouse
+                        you will receive an email containing tracking information.
+                    </p>
+                </li>
+                <li>
+                    <strong>When will I receive tracking information?</strong>
+                    <p>
+                        ACW now ships to Europe and the United States using DDP (Delivery Duty Paid).
+                        All import taxes and duties will be included in the final price of your item.
+                        <br>
+                        For all other regions, if customers refuse to accept delivery of the parcel,
+                        they are still liable for both shipment and customs charges.
+                    </p>
+                </li>
+                <li>
+                    <strong>What are the dispatch times?</strong>
+                    <p>
+                        We aim to process and ship all orders within 1-2 business days of purchase.
+                        This time is subject to change due to the nature of production and
+                        heavy order volumes.
+                    </p>
+                </li>
+                <li>
+                    <strong>Can I amend shipping info?</strong>
+                    <p>
+                        Once an order has been completed, we unfortunately cannot change
+                        the shipping address. Exceptions can be made in the event of
+                        a simple spelling error, if this is the case, please contact customer support
+                        as quickly as possible and state clearly the changes that need to be made.
+                    </p>
+                </li>
+                <li>
+                    <strong>Can I choose a specific delivery date/hour?</strong>
+                    <p>
+                        Unfortunately, it is not possible to choose a specific date and time via
+                        the A-COLD-WALL* website. If a change of date is needed,
+                        please contact the courier specific to your location directly
+                        to establish if this is possible.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <aside>
+        <a href="https://www.facebook.com/acoldwall">facebook</a>
+        <a href="https://www.instagram.com/acoldwall/">instagram</a>
+        <a href="#">topBtn</a>
+    </aside>
+
+    <footer>
+        <ul class="raleway">
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="termsOfService.html">TERMS OF SERVICE</a></li>
+            <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+            <li><a href="refundPolicy.html">REFUND POLICY</a></li>
+            <li><a href="cookiePolicy.html">COOKIE POLICY</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="newsLetter.html">NEWSLETTER</a></li>
+        </ul>
+        <P class="lato">
+            ALL CONTENTS OF THIS WEBSITE ARE THE PROPERTY OF A-COLD-WALL*. NO PART OF THIS SITE, INCLUDING ALL TEXT AND IMAGES, MAY BE REPRODUCED IN ANY FORM WITHOUT THE PRIOR WRITTEN CONSENT OF A-COLD-WALL*.<br>
+            COPYRIGHT © 2022. ALL RIGHTS RESERVED.<br>
+            REGISTERED COMPANY IN ENGLAND AND WALES 09959442.<br>
+            VAT GB263154516.
+        </P>
+    </footer>
+</body>
+</html>

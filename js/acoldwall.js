@@ -105,12 +105,6 @@ function changeBookmark(bookMark){
     });
 }
 
-function imageHover(img){
-    $(img).hover(function(){
-        // replace function 사용해서 hover 구현예정
-    });
-}
-
 function justToggle(target){
     $(target).toggleClass("active");
 }

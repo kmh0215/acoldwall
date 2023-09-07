@@ -79,7 +79,7 @@ function mainSlider2(){
     $(".way4Slider").bxSlider({
         maxSlides: 4,
         minSlides: 1,
-        slideWidth: 350,
+        slideWidth: 520,
         slideMargin: 30
     });
 }
